@@ -9,7 +9,7 @@
                 Console.Write("Hello, please enter a word: ");
                 string word = Console.ReadLine();
 
-                //Creates list of individual letters within the word
+                //Creates List of individual letters within the word
                 List<char> wordList = new List<char>();
                 foreach (char item in word)
                 {
