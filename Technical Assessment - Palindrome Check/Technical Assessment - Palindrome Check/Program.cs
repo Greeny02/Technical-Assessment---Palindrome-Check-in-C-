@@ -22,8 +22,6 @@
                     reverseWord += wordList[i - 1];
                 }
 
-                Console.WriteLine(reverseWord);
-
                 if (reverseWord == word)
                 {
                     Console.WriteLine($"{word} is a Palindrome");
