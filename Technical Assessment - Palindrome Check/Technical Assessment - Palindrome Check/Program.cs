@@ -9,7 +9,10 @@
                 Console.Write("Hello, please enter a word: ");
                 string word = Console.ReadLine();
 
+                string originalWord = word;
+
                 //Creates List of individual letters within the word
+                word = word.ToLower();
                 List<char> wordList = new List<char>();
                 foreach (char item in word)
                 {
@@ -26,11 +29,11 @@
                 //Validates whether the reversed word is equal to the original word
                 if (reverseWord == word)
                 {
-                    Console.WriteLine($"{word} is a Palindrome");
+                    Console.WriteLine($"{originalWord} is a Palindrome");
                 }
                 else
                 {
-                    Console.WriteLine($"{word} is not a Palindrome");
+                    Console.WriteLine($"{originalWord} is not a Palindrome");
                 }
             }
         }
